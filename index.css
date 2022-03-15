@@ -1,280 +1,298 @@
-@media screen and (min-width:600px) and (max-width:500px);
 body{
-    
+    background-image: url(/index5.jpg);
+    background-size: cover;
 }
-div{ display: block;}
-.container1{
-    display: flex;
-    display: inline-block;
+    
+
+.block{
+    display: block;
+    position: sticky;
 }
 .box1{
-    position: relative;
-    top: 30px;
-    cursor: pointer;
-    font-size: medium;
-}
-.box2{
-    position: relative;
-    top: 10px;
-    left: 80%;
-    display: inline-block;
-    cursor: pointer;
-    font-size: medium;
-}
-.box2-1 {
-    padding-left: 15%;
-    padding-top: 5px;
-    font-weight: bold;
-    color: white;
-}
-
-.box2-2 {
-    padding-left: 15%;
-    padding-top: 5px;
-    font-weight: bold;
-    color: wheat;
-}
-.box2-2 {
-    padding-left: 15%;
-    padding-top: 5px;
-    font-weight: bold;
-    color: white;
-}
-.box2-3 {
-    padding-left: 15%;
-    padding-top: 5px;
-    font-weight: bold;
-    color: white;
-    display: inline-block;
-}
-.box2-4 {
-    position: relative;
-    left: 80px;
-    bottom: 50px;
-}
-
-.parent {
-    position: relative;
-    left: -50px;
-    top: -130px;
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.box3 {
-    color: white;
-    font-size: 30px;
-    position: relative;
-    left: 80px;
-    top: 100px;
-}
-.box3-1 {
-    color: white;
-    font-weight: lighter;
-    position: relative;
-    left: 80px;
-    top: 70px;
+    float: left 50px;
 }
 
-.box3-2 {
-    color: white;
-    font-weight: normal;
-    position: relative;
-    left: 80px;
-    top: 55px;
+
+.display{
+    display: flex;
+    margin: 25px;
+    position: absolute;
+    right: 50px;
+    float: right 10px;
+
 }
 
-.box3-3 {
-    color: white;
-    font-weight: normal;
-    position: relative;
-    left: 80px;
-    top: 41px;
-}
 
-.btn {
+.sahara{
+    position: absolute;
+    top: 40%;
+    display: flex;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: none;
+
+}
+.doodle1{
+
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    border-radius: 20px;
+transition-duration: 0.5s;
+    flex-direction: row;
+
+margin: 10px;
+background-image: url(/index1.png);
+background-size: cover;
+padding: 15px;
+
+
+}
+.doodle1:hover{transform: translateY(-10px);}
+
+    
+    
+
+
+    
+
+p{
+float: inline-start 20px;
+
+}
+.para{
+    text-align: left;
+    color: aliceblue;
+    font-size: medium;
+
+}
+.doodle2{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    transition-duration: 02;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+
+margin: 10px;
+background-image: url(index3.png);
+background-size: cover;
+padding: 15px;
+flex-direction: column;
+
+
+
+
+}
+.doodle2:hover{transform: translateY(-10px);}
+
+
+
+.doodle3{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    transition-duration:0.5s;
+    border-radius: 20px;
+
+margin: 10px;
+background-image: url(index4.png);
+background-size: cover;
+padding: 15px;
+flex-direction: column;
+
+}
+.doodle3:hover{transform: translateY(-10px);}
+
+.doodle4{
+        width: 250px;
+        height: 250px;
+        cursor: pointer;
+        transition: 2s;
+        border-radius: 20px;
+    transition-duration: 0.5s;
+    margin: 10px;
+    background-image: url(index2.png);
+    background-size: cover;
+    padding: 15px;
+    flex-direction: row;
+
+}
+.doodle4:hover{transform: translateY(-10px);}
+h4{
+    font-size: medium;
+    color: azure;
+}
+.button{
     width: 140px;
-    color: black;
+    color: red;
     font-size: 12px;
     font-weight: bolder;
     padding: 12px 0;
-    background: white;
+    background: wheat;
     border: 0;
     border-radius: 20px;
     margin-left: 80px;
     margin-top: 30px;
     cursor: pointer;
+    transition-duration: 02s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
+@media (min-width:350px) and (max-width:500px){
 
-.container3 {
-    position: relative;
-    top: 500%;
-    margin-top: 350px;
-    margin-left: calc(-300px);
-}
+    body{
+        background-image: url(index5.jpg);
+        background-size: cover;
+        width: 400px;
+    }
+        
+    
+    .block{
+        display: block;
+        position: sticky;
+        width:400px;
 
-.grid-container {
-    display: inline;
-    display: grid; 
-    grid-template-columns: 250px 250px;
-    grid-row-gap: 40px;
+    }
+    .box1{
+        display: flex;
+        float: left 50px;
+    }
+    
+    
+    .display{
+        display: block;
+        margin: 25px;
+        position: absolute;
+        right: 50px;
+        float: right 10px;
+    
+    }
+    
+    
+    .sahara{
+        position: absolute;
+        top: 40%;
+        display: block;
+    }
+    .flex-container{
+        display: block;
+        flex-wrap: wrap;
+        background-color: none;
+    
+    }
+    .doodle1{
+    
+        width: 320px;
+        height: 100px;
+        cursor: pointer;
+        border-radius: 20px;
+    transition-duration: 0.5s;
+        flex-direction: column;
+        border: solid 2px royalblue;
+    
+    margin: 10px;
+    background-image: url(index1.png);
+    background-size: cover;
+    padding: 15px;
+    
+    
+    }
+    .doodle1:hover{transform: translateY(-10px);}
+    
+        
+        
+    
+    
+        
+    
+    p{
+    float: inline-start 20px;
+    
+    }
+    .para{
+        text-align: left;
+        color: aliceblue;
+        font-size: medium;
+    
+    }
+    .doodle2{
+        width: 320px;
+        height: 100px;
+        cursor: pointer;
+        transition-duration: 02;
+        border-radius: 20px;
+        transition-duration: 0.5s;
+        border: solid 2px royalblue;
+    margin: 10px;
+    background-image: url(/index3.png);
+    background-size: cover;
+    padding: 15px;
+    flex-direction: column;
+    
+    
+    
+    
+    }
+    .doodle2:hover{transform: translateY(-10px);}
+    
+    
+    
+    .doodle3{
+        width: 320px;
+        height: 100px;
+        cursor: pointer;
+        transition-duration:0.5s;
+        border-radius: 20px;
+        border: solid 2px royalblue;
+    margin: 10px;
+    background-image: url(index4.png);
+    background-size: cover;
+    padding: 15px;
+    flex-direction: column;
+    
+    }
+    .doodle3:hover{transform: translateY(-10px);}
+    
+    .doodle4{
+            width: 320px;
+            height: 100px;
+            cursor: pointer;
+            transition: 2s;
+            border-radius: 20px;
+        transition-duration: 0.5s;
+        margin: 10px;
+        background-image: url(index2.png);
+        background-size: cover;
+        padding: 15px;
+        flex-direction: row;
+        border: solid 2px royalblue;
+    }
+    .doodle4:hover{transform: translateY(-10px);}
+    h4{
+        font-size: medium;
+        color: azure;
+    }
+    .button{
+        width: 140px;
+        color: red;
+        font-size: 12px;
+        font-weight: bolder;
+        padding: 12px 0;
+        background: wheat;
+        border: 0;
+        border-radius: 20px;
+        margin-left: 80px;
+        margin-top: 30px;
+        cursor: pointer;
+        transition-duration: 02s;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    .button:hover{transform: translateY(-10px);}
+
 }
     
-.box {
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-    margin-top: 30px;
-    transition-duration: 0.5s;
-    background-image: url(/kalhari\ .png);
-    background-size: cover;
-    grid-row: 1/2;
-    grid-column: 1/2;
-}
-
-.card {
-    color: white;
-    font-size: x-large;
-    padding-top: 10px;
-}
-.card1 {
-    color: white;
-}
-
-p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-.box {
-    /* border: 1px solid black; */
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-    margin-top: 30px;
-    transition-duration: 0.5s;
-}
-.box6 {
-    background-image: url(/pyramid.png);
-    background-size: cover;
-    grid-row: 1/2;
-    grid-column: 2/3;
-}
-.grid-container {
-    display: inline;
-}
-.grid-container {
-    /* display: grid; */
-    grid-template-columns: 250px 250px;
-    grid-row-gap: 40px;
-}
-
-.box {
-    /* border: 1px solid black; */
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-    margin-top: 30px;
-    transition-duration: 0.5s;
-}
-
-.box5 {
-    background-image: url(/shara\ desert\ \(1\.jpg);
-    background-size: cover;
-    grid-row: 1/2;
-    grid-column: 1/2;
-}
-
-card {
-    color: white;
-    font-size: x-large;
-    padding-top: 10px;
-}
-.card1 {
-    color: white;
-}
-p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-.box {
-    /* border: 1px solid black; */
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-    margin-top: 30px;
-    transition-duration: 0.5s;
-}
-.box {
-    /* border: 1px solid black; */
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-    margin-top: 30px;
-    transition-duration: 0.5s;
-}
-.box6 {
-    background-image: url(/pyramid.png);
-    background-size: cover;
-    grid-row: 1/2;
-    grid-column: 2/3;
-}
-
-card2 {
-    color: white;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-.box7 {
-    background-image: url(./kalhari\ .png);
-    background-size: cover;
-    grid-row: 2/3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column: 1/2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-.box8 {
-    background-image: url(/al\ baghwat.png);
-    background-size: cover;
-    grid-row: 2/3;
-    grid-column: 2/3;
-}
-
-.card4 {
-    color: white;
-}
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
